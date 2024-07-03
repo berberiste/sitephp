@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <script defer src="https://pyscript.net/latest/pyscript.js"></script> -->
+  <!-- <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css"/> -->
+</head>
+<body style="overflow: hidden;">
+
+  <div 
+  style="
+    display: flex;
+    border: solid;
+    position: relative;
+    height: 275px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  ">
+    <img src="./reflechire.jpg.png" alt=""
+    style="
+    transform: rotateZ(-40deg);
+    "
+    >
+    <span 
+    style="
+    position: absolute;
+    font-size: 200%;
+    "
+    id="phrase">    
+    </span>
+
+  </div>
+
+
+  <video src="./cutemiao.mp4" autoplay muted></video>
+
+
+  <script>
+    let tab=['nchallah', 'adawid', 'le bac']
+    let phrase = document.getElementById('phrase')
+    let i=0
+    setInterval(function(){
+      if(i===3){
+        clearInterval();
+        console.log('arreter')
+      }else{
+        phrase.innerHTML+=tab[i]+"<br>";
+        i++
+      }
+    },1000)
+  </script>
+
+  
+    <py-script>
+        <link rel="import" href="">
+        <!-- import pandas as pd
+        import matplotlib.pyplot as plt
+        import numpy as np
+
+        dataset = pd.read_csv("Iris.csv")
+        print(dataset.iloc[:,5]) -->
+        <!-- import tkinter as tk
+
+        fenetre = tk()
+        lab = fenetre.label(text="heooe")
+        lab.pack()
+        print("heollo") -->
+    </py-script>
+
+   
+</body>
+</html>
