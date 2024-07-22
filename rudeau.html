@@ -1,0 +1,71 @@
+<style>
+    body{
+        overflow: hidden;
+    }
+    h2{
+        transition: 3s;
+        height: fit-content;
+    }
+    video{
+        width: 100%;
+        position: relative;
+        top: 0;
+        z-index: -1;
+    }
+    #nom{
+        position: relative;
+        top: 0;
+        color: white;
+    }
+    div{
+        position: absolute;        
+        top: 0;
+        width: 50%;
+        margin: 0% 25% 0% 25%;
+        height: fit-content;
+        opacity: 0;
+    }
+    #moyenne, #miao1, #miao2{
+        position: relative;
+        left: 0%;
+        color: white;
+        opacity: 0;
+        transition: 1s;
+    }
+    #miao1{
+        left: 50%;        
+    }
+
+</style>
+<body id="body">
+    <video 
+    src="./Ouverture rideau 2.mp4"
+    title="Nadjet"
+    autoplay
+    muted
+    >
+    </video>
+
+    <div>
+        <h2 style="color: white;" id="miao1">aseggas i3eddan ... <br><img src="./assets/miao3.png"></h2>
+        <h2 style="color: white;position: absolute;top: 0;" id="miao2">ma daseggas agi <br><img src="./assets/miao1.png"></h2>
+        <!-- <center><h2 id="nom">.</h2></center><br> -->
+        <h2 id="moyenne">Gher tagara <br><img src="./assets/miao2.png">wwightid s <br>12.76</h1><br>
+    </div>
+    
+    <script src="./app.js"></script></body>
+
+    <video id="video" muted="false" style="z-index: -2;position: absolute;top: 0;opacity: 0;">
+        <source src="./assets/videomiao.mp4" type="video/mp4">
+    </video>
+    <center>
+    <button 
+    id="lanceur"
+        style="position: absolute;opacity:1;top: 50%;width: 10%;height: 25%;font-size: 200%;"    
+        onclick="document.getElementById('video').muted=false; document.getElementById('video').pause();document.getElementById('video').play();lancer()">
+        lancer
+    <button> 
+    </center>
+
+
+</body>
